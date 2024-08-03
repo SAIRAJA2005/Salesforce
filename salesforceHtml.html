@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Light blue background */
+            color: #333;
+        }
+        form {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #ffffff; /* White background for form */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50; /* Green background for submit button */
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 15px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        select {
+            appearance: none;
+            background-color: #f9f9f9;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DdL000004T8x2" method="POST">
+
+    <input type="hidden" name="orgid" value="00DdL000004T8x2">
+    <input type="hidden" name="retURL" value="http://www.acet.ac.in">
+
+    <label for="name">Contact Name</label>
+    <input id="name" maxlength="80" name="name" size="20" type="text" required /><br>
+
+    <label for="phone">Phone</label>
+    <input id="phone" maxlength="40" name="phone" size="20" type="text" required /><br>
+
+    <label for="email">Email</label>
+    <input id="email" maxlength="80" name="email" size="20" type="email" required /><br>
+
+    <label for="subject">Subject</label>
+    <input id="subject" maxlength="80" name="subject" size="20" type="text" required /><br>
+
+    <label for="type">Type</label>
+    <select id="type" name="type" required>
+        <option value="">--None--</option>
+        <option value="Mechanical">Mechanical</option>
+        <option value="Electrical">Electrical</option>
+        <option value="Electronic">Electronic</option>
+        <option value="Structural">Structural</option>
+        <option value="Other">Other</option>
+    </select><br>
+
+    <label for="status">Status</label>
+    <select id="status" name="status" required>
+        <option value="">--None--</option>
+        <option value="New">New</option>
+        <option value="Working">Working</option>
+        <option value="Escalated">Escalated</option>
+        <option value="Closed">Closed</option>
+    </select><br>
+
+    <label for="priority">Priority</label>
+    <select id="priority" name="priority" required>
+        <option value="">--None--</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+    </select><br>
+
+    <label for="reason">Case Reason</label>
+    <select id="reason" name="reason" required>
+        <option value="">--None--</option>
+        <option value="Installation">Installation</option>
+        <option value="Equipment Complexity">Equipment Complexity</option>
+        <option value="Performance">Performance</option>
+        <option value="Breakdown">Breakdown</option>
+        <option value="Equipment Design">Equipment Design</option>
+        <option value="Feedback">Feedback</option>
+        <option value="Other">Other</option>
+        <option value="Software Bug">Software Bug</option>
+        <option value="Hardware Issue">Hardware Issue</option>
+        <option value="Connectivity Problem">Connectivity Problem</option>
+        <option value="Incorrect Invoice">Incorrect Invoice</option>
+        <option value="Payment Failure">Payment Failure</option>
+        <option value="Refund Request">Refund Request</option>
+        <option value="Damaged Product">Damaged Product</option>
+        <option value="Incorrect Item">Incorrect Item</option>
+        <option value="No Longer Needed">No Longer Needed</option>
+    </select><br>
+
+    <label for="description">Description</label>
+    <textarea id="description" name="description" required></textarea><br>
+
+    <label for="00NdL000004AZBt">City</label>
+    <select id="00NdL000004AZBt" name="00NdL000004AZBt" title="City" required>
+        <option value="">--None--</option>
+        <option value="Banglore">Banglore</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Pune">Pune</option>
+        <option value="Amaranti">Amaranti</option>
+    </select><br>
+
+    <input type="submit" name="submit">
+
+</form>
+
+</body>
+</html>
